@@ -14,9 +14,7 @@ function monitorarArquivos(cb){
 function servidor(cb) {
     return gulp.src("build")
         .pipe(webserver({
-            port: 8080,
-            open: true,
-            livereload: true,
+            
         }))
 }
 
