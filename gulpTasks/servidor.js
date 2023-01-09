@@ -21,10 +21,7 @@ gulp.task('deploy', function() {
 function servidor(cb) {
     return gulp.src("build")
         .pipe(webserver({
-            gulp.task('deploy', function() {
-  return gulp.src('./dist/**/*')
-    .pipe(ghPages());
-});
+            
         }))
 }
 
