@@ -11,13 +11,6 @@ function monitorarArquivos(cb){
     return cb()
 }
 
-const ghPages = require('gulp-gh-pages');
-
-gulp.task('deploy', function() {
-  return gulp.src('./dist/**/*')
-    .pipe(ghPages());
-});
-
 function servidor(cb) {
     return gulp.src("build")
         .pipe(webserver({
